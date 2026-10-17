@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# TypeScript output emitted next to sources (base tsconfig has noEmit off)
+apps/server/src/**/*.js
+apps/server/drizzle-kit.config.js
+apps/web/src/**/*.js
+apps/web/vite.config.js
+apps/web/tailwind.config.js
+apps/web/postcss.config.js
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Caches
+.cache/
+.vite/
+.turbo/
+coverage/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

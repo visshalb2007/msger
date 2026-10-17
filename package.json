@@ -1,0 +1,39 @@
+{
+  "name": "msger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc -p tsconfig.base.json",
+    "build": "pnpm --filter @msger/server build && pnpm --filter @msger/web build",
+    "dev": "run-p dev:*",
+    "dev:server": "fastify start - -l info",
+    "dev:web": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.10.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2",
+    "vitest": "^3.0.0",
+    "wait-on": "^9.5.1",
+    "fastify": "^5.12.5",
+    "helmet": "^8.3.0",
+    "pg": "^8.23.1",
+    "pino": "^10.4.0",
+    "zod": "^4.6.5"
+  }
+}

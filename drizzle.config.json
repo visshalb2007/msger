@@ -1,0 +1,6 @@
+{
+  "driver": "pg",
+  "schema": "./apps/server/src/db/schema.ts",
+  "out": "./apps/server/src/db/drizzle",
+  "dialect": "postgresql"
+}

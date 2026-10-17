@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS "dm_pairs";
+DROP TABLE IF EXISTS "push_subscriptions";
+DROP TABLE IF EXISTS "attachments";
+DROP TABLE IF EXISTS "messages";
+DROP INDEX IF EXISTS "messages_room_id_seq_idx";
+DROP TABLE IF EXISTS "room_members";
+DROP TABLE IF EXISTS "rooms";
+DROP TABLE IF EXISTS "sessions";
+DROP TABLE IF EXISTS "users";
+DROP EXTENSION IF EXISTS "pgcrypto";
